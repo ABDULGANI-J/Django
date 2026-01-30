@@ -7,5 +7,5 @@ app_name='bike'
 
 urlpatterns = [
     path("",views.index,name="index"),
-    path("try/",views.home,name="home")
+    path("detail/",views.detail,name="detail")
 ]

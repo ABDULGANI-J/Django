@@ -6,5 +6,5 @@ from django.urls import reverse
 
 def index(request):
     return render(request,'index.html')
-def home(request):
-    return HttpResponse("Wellcome")
+def detail(request):
+    return render(request,'detail.html')
