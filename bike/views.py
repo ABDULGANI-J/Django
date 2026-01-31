@@ -6,6 +6,12 @@ from django.urls import reverse
 
 def index(request):
     bikes_title="Lates Bikes"
-    return render(request,'index.html',{'heading_bike':bikes_title})
-def detail(request):
+    posts = [
+        {'id':1, 'title':'post 1','content':'content of post 1'},
+        {'id':2, 'title':'post 2','content':'content of post 2'},
+        {'id':3, 'title':'post 3','content':'content of post 3'},
+        {'id':4, 'title':'post 4','content':'content of post 4'},
+    ]
+    return render(request,'index.html',{'heading_bike':bikes_title, 'posts':posts})
+def detail(request,post_id):
     return render(request,'detail.html')

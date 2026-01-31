@@ -4,8 +4,7 @@ from . import views
 
 app_name='bike'
 
-
 urlpatterns = [
     path("",views.index,name="index"),
-    path("detail/",views.detail,name="detail")
+    path("post/<str:post_id>",views.detail,name="detail")
 ]
