@@ -6,5 +6,6 @@ app_name='bike'
 
 urlpatterns = [
     path("",views.index,name="index"),
-    path("post/<str:post_id>",views.detail,name="detail")
+    path("post/<str:slug>",views.detail,name="detail"),
+    path("contact",views.contact_view,name="contact")
 ]
